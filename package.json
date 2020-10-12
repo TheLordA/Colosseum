@@ -1,0 +1,21 @@
+{
+  "name": "colosseum-root",
+  "version": "0.1.0",
+  "description": "Colosseum - A fully functional Netflix Clone made with MERN Stack and other technologies, check them in README for more details.",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLordA/Colosseum.git"
+  },
+  "author": "Anass Ferrak",
+  "license": "GPL-3.0 License",
+  "bugs": {
+    "url": "https://github.com/TheLordA/Colosseum/issues"
+  },
+  "homepage": "https://github.com/TheLordA/Colosseum#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
