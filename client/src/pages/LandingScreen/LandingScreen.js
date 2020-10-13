@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./LandingScreen.css";
 
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../../component/UI/NavBar/index";
 import LandingPage from "../../assets/images/landingPage.jpg";
 import { TextField } from "@material-ui/core";
-import Button from "../../components/UI/Button/index";
-import DarkComponent from "../../components/UI/DarkComponent/index";
-import FAQComponent from "../../components/UI/FAQComponent/index";
+import Button from "../../component/UI/Button/index";
+import DarkComponent from "../../component/UI/DarkComponent/DarkComponent";
+import FAQComponent from "../../component/UI/FAQComponent/index";
 import { Link } from "react-router-dom";
 //import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { textualMaterial } from "./Texts";
