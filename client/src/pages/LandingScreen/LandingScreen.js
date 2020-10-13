@@ -7,6 +7,7 @@ import { TextField } from "@material-ui/core";
 import Button from "../../component/UI/Button/index";
 import DarkComponent from "../../component/UI/DarkComponent/DarkComponent";
 import FAQComponent from "../../component/UI/FAQComponent/index";
+import Footer from "../../component/UI/Footer/index";
 import { Link } from "react-router-dom";
 //import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { textualMaterial } from "./Texts";
@@ -112,6 +113,7 @@ const LandingScreen = (props) => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };
