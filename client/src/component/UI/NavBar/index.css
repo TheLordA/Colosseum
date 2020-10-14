@@ -83,6 +83,7 @@
 @media (min-width: 600px) {
 	.NavBar {
 		font-size: 1vw;
+		height: 4rem;
 	}
 
 	.NavBar img {

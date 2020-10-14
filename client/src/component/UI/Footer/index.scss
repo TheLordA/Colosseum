@@ -6,7 +6,7 @@
 	text-align: center;
 
 	@include responsive(phone) {
-		padding-top: 10rem;
+		padding-top: 2rem;
 	}
 
 	&__copyright {
