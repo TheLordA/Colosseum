@@ -8,6 +8,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingScreen from "./pages/LandingScreen/LandingScreen";
+import LoginScreen from "./pages/LogIn/index";
 import "./App.scss";
 
 const Routing = () => {
@@ -15,6 +16,9 @@ const Routing = () => {
 		<Switch>
 			<Route exact path="/">
 				<LandingScreen />
+			</Route>
+			<Route exact path="/login">
+				<LoginScreen />
 			</Route>
 		</Switch>
 	);
