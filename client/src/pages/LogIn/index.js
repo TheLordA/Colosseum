@@ -158,7 +158,7 @@ const Login = (props) => {
 						control={<Checkbox style={{ color: "rgb(229, 9, 20)" }} name="checkedB" />}
 						label="Remember Me"
 					/>
-					<span>Need help?</span>
+					<span>Need help ?</span>
 				</div>
 			</div>
 		</div>
