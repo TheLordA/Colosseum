@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../HomeHeader/index";
+import Footer from "../Footer/index";
 
 import {
 	fetchNetflixOriginals,
@@ -14,7 +14,7 @@ import {
 	fetchHorrorMovies,
 } from "../../../store/actions/index";
 
-import DisplayMovieRow from "../DisplayMovieRow";
+import DisplayMovieRow from "../DisplayMovieRow/index";
 
 const MainContent = (props) => {
 	const [selectedMovie, setSelectedMovie] = useState({});
