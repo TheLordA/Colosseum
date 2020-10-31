@@ -6,23 +6,9 @@
  */
 
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LandingScreen from "./pages/LandingScreen/LandingScreen";
-import LoginScreen from "./pages/LogIn/index";
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./Routing";
 import "./App.scss";
-
-const Routing = () => {
-	return (
-		<Switch>
-			<Route exact path="/">
-				<LandingScreen />
-			</Route>
-			<Route exact path="/login">
-				<LoginScreen />
-			</Route>
-		</Switch>
-	);
-};
 
 function App() {
 	return (
