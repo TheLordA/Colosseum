@@ -29,7 +29,18 @@ Available Soon
 
 # Tech Stack
 
-Available Soon
+## BackEnd:
+
+-    [Node.js](https://nodejs.org)
+-    [Express.js](https://expressjs.com/)
+
+## FrontEnd:
+
+-    [React.js](https://reactjs.org/)
+
+## DataBase:
+
+-    [MongoDB](https://www.mongodb.com/)
 
 # Usage
 
