@@ -31,4 +31,14 @@ router.post("/login", (req, res, next) => {
 
 // ------------------------------- END ------------------------------- //
 
+// @desc    LogOut User
+// @route   GET /auth/logout
+// @access 	Public
+// @test	UnitTest : Verified
+router.get("/logout", (req, res) => {
+	req.logout();
+	// Successful logged Out, redirect Login .
+	res.redirect("/");
+});
+
 module.exports = router;
