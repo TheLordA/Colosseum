@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const path = require("path");
+const cors = require("cors");
+const mongoose = require("mongoose");
 const passport = require("passport");
 const session = require("express-session");
 const mongoStore = require("connect-mongo")(session);
@@ -54,6 +56,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
 app.use("/auth", require("./routes/auth"));
+app.use("/movies", require("./routes/movies"));
 
 // make the server listen to requests
 app.listen(PORT, () => {
