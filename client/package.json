@@ -19,6 +19,7 @@
     "react-scripts": "^4.0.0",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
+    "redux-promise": "^0.6.0",
     "swiper": "^6.3.5",
     "webpack": "^4.44.2"
   },
