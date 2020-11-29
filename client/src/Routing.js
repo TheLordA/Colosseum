@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import MoviesState from "./contexts/movies/moviesState";
+
 import LandingScreen from "./pages/LandingScreen/LandingScreen";
 import LoginScreen from "./pages/LogIn/index";
 import Home from "./pages/Home/index";
@@ -15,7 +17,9 @@ const Routing = () => {
 				<LoginScreen />
 			</Route>
 			<Route exact path="/browse" component={Home}>
-				<Home />
+				<MoviesState>
+					<Home />
+				</MoviesState>
 			</Route>
 			<Route component={NotFound} />
 		</Switch>

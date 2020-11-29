@@ -7,10 +7,10 @@
 
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import promise from "redux-promise";
-import reducers from "./store/reducers";
+//import { Provider } from "react-redux";
+//import { createStore, applyMiddleware } from "redux";
+//import promise from "redux-promise";
+//import reducers from "./store/reducers";
 import Routing from "./Routing";
 
 import "swiper/swiper-bundle.min.css";
@@ -21,15 +21,13 @@ import "swiper/swiper-bundle.min.css";
 // Import main sass file to apply global styles
 import "./App.scss";
 
-const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
+//const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 function App() {
 	return (
-		<Provider store={createStoreWithMiddleware(reducers)}>
-			<BrowserRouter>
-				<Routing />
-			</BrowserRouter>
-		</Provider>
+		<BrowserRouter>
+			<Routing />
+		</BrowserRouter>
 	);
 }
 
