@@ -19,7 +19,7 @@ const DisplayMovieRow = (props) => {
 	};
 
 	let netflixUrl = false;
-	if (props.url === `/discover/tv?api_key=${process.env.API_KEY}&with_networks=213`) {
+	if (props.url === `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`) {
 		netflixUrl = true;
 	}
 
@@ -59,7 +59,10 @@ const DisplayMovieRow = (props) => {
 			>
 				{props.movies.map((movie, idx) => {
 					let movieImageUrl = "https://image.tmdb.org/t/p/w500/" + movie.backdrop_path;
-					if (props.url === `/discover/tv?api_key=${process.env.API_KEY}&with_networks=213`) {
+					if (
+						props.url ===
+						`/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`
+					) {
 						movieImageUrl = "https://image.tmdb.org/t/p/original/" + movie.poster_path;
 					}
 					if (movie.poster_path && movie.backdrop_path !== null) {
@@ -73,6 +76,7 @@ const DisplayMovieRow = (props) => {
 								}
 							>
 								<img
+									alt=""
 									src={movieImageUrl}
 									className="movieShowcase__container--movie-image"
 								/>
