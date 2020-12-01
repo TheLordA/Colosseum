@@ -1,7 +1,7 @@
 import React from "react";
 
 import PlayLogo from "../../../assets/images/play-button.svg";
-import AddLogo from "../../../assets/images/add.svg";
+import AddLogo from "../../../assets/images/add-button.svg";
 
 export default function Header(props) {
 	const backgroundStyle = {
@@ -14,7 +14,7 @@ export default function Header(props) {
 		<header style={backgroundStyle} className="header">
 			<div className="header__container">
 				<h1 className="header__container-heading">{props.movie.name}</h1>
-				<button onClick={() => alert("not a movie!")} className="header__container-btnPlay">
+				{/* <button onClick={() => alert("not a movie!")} className="header__container-btnPlay">
 					<PlayLogo className="header__container-btnMyList-play" />
 					Play
 				</button>
@@ -22,7 +22,7 @@ export default function Header(props) {
 				<button className="header__container-btnMyList">
 					<AddLogo className="header__container-btnMyList-add" />
 					My List
-				</button>
+				</button> */}
 				<p className="header__container-overview">{props.movie.overview}</p>
 			</div>
 			<div className="header--fadeBottom"></div>
