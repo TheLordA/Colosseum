@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	color: #fff;
-	height: 52rem;
+	height: 36rem;
 	opacity: 0;
 	box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.15);
 	transition: all 0.3s;
@@ -20,10 +20,10 @@
 
 	&__container {
 		background: linear-gradient(90deg, #000 50%, transparent);
-		width: 70%;
+		width: 65%;
 		padding-top: 3rem;
-		height: 30rem;
-		padding-left: 5rem;
+		height: 33rem;
+		padding-left: 3rem;
 		/* margin-left: 20px; */
 		/* margin-right: 20px; */
 
@@ -67,11 +67,13 @@
 	}
 
 	&__overview {
-		color: $color-modal-grey-2;
+		color: $color-white;
 		/* padding-top: 2rem; */
 		font-size: 1.3rem;
+		text-align: justify;
+		text-justify: inter-word;
 		hyphens: auto;
-		width: 60%;
+		width: 50%;
 		line-height: 1.2;
 
 		@include responsive(lg_desktop) {
@@ -132,7 +134,7 @@
 
 .show {
 	transition: 0.5s 0.3s ease-out;
-	top: 10%;
+	top: 4%;
 	left: 0;
 	visibility: visible;
 	opacity: 1;
