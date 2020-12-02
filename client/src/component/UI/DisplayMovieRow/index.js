@@ -56,6 +56,7 @@ const DisplayMovieRow = (props) => {
 				scrollbar={{ draggable: false, hide: true }}
 				slideToClickedSlide={false}
 				pagination={{ clickable: true }}
+				spaceBetween={10}
 			>
 				{props.movies.map((movie, idx) => {
 					let movieImageUrl = "https://image.tmdb.org/t/p/w500/" + movie.backdrop_path;
