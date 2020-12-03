@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	color: #fff;
-	height: 36rem;
+	height: 32rem;
 	opacity: 0;
 	box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.15);
 	transition: all 0.3s;
@@ -22,7 +22,7 @@
 		background: linear-gradient(90deg, #000 50%, transparent);
 		width: 65%;
 		padding-top: 3rem;
-		height: 33rem;
+		height: 29rem;
 		padding-left: 3rem;
 		/* margin-left: 20px; */
 		/* margin-right: 20px; */
@@ -134,7 +134,7 @@
 
 .show {
 	transition: 0.5s 0.3s ease-out;
-	top: 4%;
+	top: 10%;
 	left: 0;
 	visibility: visible;
 	opacity: 1;
