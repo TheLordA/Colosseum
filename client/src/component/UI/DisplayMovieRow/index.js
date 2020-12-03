@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Lazy } from "swiper";
+import "swiper/components/scrollbar/scrollbar.scss";
 // install Swiper components
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, /*  Scrollbar, */ A11y, Lazy]);
 
 const DisplayMovieRow = (props) => {
 	const [width, setWidth] = useState(window.innerWidth);
@@ -76,11 +77,14 @@ const DisplayMovieRow = (props) => {
 									(netflixUrl ? "__netflix" : "")
 								}
 							>
-								<img
-									alt=""
-									src={movieImageUrl}
-									className="movieShowcase__container--movie-image"
-								/>
+								<div>
+									<img
+										alt=""
+										src={movieImageUrl}
+										className="movieShowcase__container--movie-image"
+									/>
+									<h1 className="movieShowcase__container--movie-title">Title</h1>
+								</div>
 							</SwiperSlide>
 						);
 					}

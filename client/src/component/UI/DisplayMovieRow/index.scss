@@ -11,9 +11,12 @@
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-	bottom: 0 !important;
-	left: 0 !important;
+	bottom: 95% !important;
+	left: 43% !important;
 	width: 100% !important;
+}
+.swiper-container-horizontal > .swiper-scrollbar {
+	display: none;
 }
 
 div.swiper-button-prev,
@@ -111,6 +114,15 @@ div.swiper-button-next {
 				height: 100%;
 				width: 100%;
 				object-fit: contain;
+			}
+			&-title {
+				display: none;
+				margin-bottom: 0;
+				margin-top: 0;
+				&:hover {
+					display: block;
+					color: green;
+				}
 			}
 
 			&__netflix {
