@@ -5,7 +5,7 @@ import AddLogo from "../../../assets/images/add-button.svg";
 
 export default function Header(props) {
 	const backgroundStyle = {
-		backgroundSize: "cover",
+		backgroundSize: "100% 100%",
 		backgroundImage: `url(https://image.tmdb.org/t/p/original/${props.movie.backdrop_path})`,
 		backgroundPosition: "center",
 	};
@@ -25,7 +25,7 @@ export default function Header(props) {
 				</button> */}
 				<p className="header__container-overview">{props.movie.overview}</p>
 			</div>
-			<div className="header--fadeBottom"></div>
+			{/* <div className="header--fadeBottom"></div> */}
 		</header>
 	);
 }

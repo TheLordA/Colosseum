@@ -1,16 +1,17 @@
 .header {
 	background-color: $color-background;
 	grid-column: 1 / 13;
-	height: 65rem;
+	height: 40rem;
 	display: inline-block;
+	width: 100%;
 
 	@include responsive(phone) {
 		height: 50rem;
 	}
 
 	&__container {
-		padding-top: 20rem;
-		padding-left: 4.5rem;
+		padding-top: 5rem;
+		padding-left: 5rem;
 		color: #fff;
 
 		@include responsive(phone) {
