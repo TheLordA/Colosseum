@@ -60,6 +60,7 @@ const DisplayMovieRow = (props) => {
 				spaceBetween={10}
 			>
 				{props.movies.map((movie, idx) => {
+					//console.log(movie);
 					let movieImageUrl = "https://image.tmdb.org/t/p/w500/" + movie.backdrop_path;
 					if (
 						props.url ===
@@ -77,13 +78,15 @@ const DisplayMovieRow = (props) => {
 									(netflixUrl ? "__netflix" : "")
 								}
 							>
-								<div>
+								<div className="movieSwipe">
 									<img
 										alt=""
 										src={movieImageUrl}
 										className="movieShowcase__container--movie-image"
 									/>
-									<h1 className="movieShowcase__container--movie-title">Title</h1>
+									<h1 className="movieShowcase__container--movie-title">
+										{movie.title ? movie.title : movie.original_name}
+									</h1>
 								</div>
 							</SwiperSlide>
 						);
