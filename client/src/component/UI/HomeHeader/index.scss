@@ -268,7 +268,7 @@ p {
 
 // Hero Image
 .Hero {
-	margin-top: 60px;
+	margin-top: 30px;
 	width: 100%;
 	position: relative;
 	background-size: cover;
@@ -316,7 +316,7 @@ p {
 }
 
 // Button
-.Button {
+.CustomButton {
 	background: transparent;
 	display: flex;
 	height: 44px;
@@ -331,6 +331,7 @@ p {
 	font-size: 14px;
 	font-weight: 600;
 	transition: border 0.125s ease, background 0.125s ease;
+	margin-right: 20px;
 
 	&:hover {
 		border: 2px solid $grey;

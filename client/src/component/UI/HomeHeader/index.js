@@ -1,8 +1,6 @@
 import React from "react";
 import ColosseumLogo from "../../../assets/images/logo.png";
-
-import PlayLogo from "../../../assets/images/play-button.svg";
-import AddLogo from "../../../assets/images/add-button.svg";
+import "./index.scss";
 
 export default function Header(props) {
 	const backgroundStyle = {
@@ -28,10 +26,7 @@ export default function Header(props) {
 						alt=""
 					/>
 					<h2>Season 2 now available</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque id quam
-						sapiente unde voluptatum alias vero debitis, magnam quis quod.
-					</p>
+					<p>{props.movie.overview}</p>
 					<div className="button-wrapper">
 						<CustomButton primary={true} text="Watch now" />
 						<CustomButton primary={false} text="+ My list" />
@@ -45,7 +40,7 @@ export default function Header(props) {
 
 const CustomButton = (props) => {
 	return (
-		<button href="#" className="Button" data-primary={props.primary}>
+		<button href="#" className="CustomButton" data-primary={props.primary}>
 			{props.text}
 		</button>
 	);
