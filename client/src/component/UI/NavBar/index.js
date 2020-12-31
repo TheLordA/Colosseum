@@ -30,7 +30,7 @@ const NavBar = (props) => {
 	}, [scrollNavbarStateHandler]);
 
 	let navTiles = null;
-	let flexStyle = { justifyContent: "space-between", backgroundColor: !isNavbarAtTop && "black" };
+	let flexStyle = { justifyContent: "space-between", backgroundColor: !isNavbarAtTop && "rgba(0,0,0,0)" };
 
 	if (navigation) {
 		navTiles = (

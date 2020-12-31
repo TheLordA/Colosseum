@@ -51,14 +51,12 @@ div.swiper-button-next {
 
 .movieShowcase {
 	background-color: $color-background;
-	grid-column: 2 / 13;
 	color: #fff;
 
 	&__heading {
-		padding-top: 2rem;
-		margin-top: 0px;
+		font-size: 25px;
 		margin-left: 2rem;
-		margin-bottom: 0px;
+
 		width: fit-content;
 	}
 
