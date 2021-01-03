@@ -1,7 +1,7 @@
 import React from "react";
 import Aux from "react-aux";
 
-import AddIcon from "../../../assets/images/add.svg";
+import AddIcon from "../../../assets/images/add-button.svg";
 import PlayIcon from "../../../assets/images/play-button.svg";
 
 const MovieDetails = (props) => {
@@ -21,14 +21,14 @@ const MovieDetails = (props) => {
 					{props.movie.number_of_seasons ? " Seasons: " + props.movie.number_of_seasons : ""}
 				</p>
 				<p className="modal__overview">{props.movie.overview}</p>
-				<button className="modal__btn modal__btn--red">
+				{/* <button className="modal__btn modal__btn--red">
 					<PlayIcon className="modal__btn--icon" />
 					Play
 				</button>
 				<button className="modal__btn">
 					<AddIcon className="modal__btn--icon" />
 					My List
-				</button>
+				</button> */}
 			</div>
 		</Aux>
 	);

@@ -10,6 +10,7 @@ import DisplayMovieRow from "../DisplayMovieRow/index";
 const MainContent = (props) => {
 	const { movies, getTrends } = useContext(moviesContext);
 	const [selectedMovie, setSelectedMovie] = useState({});
+
 	/* 
 	const [movieInfo, setMovieInfo] = useState([
 		{
@@ -57,7 +58,7 @@ const MainContent = (props) => {
 		axios.get(url)
 			.then((res) => {
 				const movieData = res.data;
-				console.log(res.data);
+				//console.log(res.data);
 				setSelectedMovie(movieData);
 			})
 			.catch((error) => {
