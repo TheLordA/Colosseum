@@ -20,9 +20,9 @@
 
 	&__container {
 		background: linear-gradient(90deg, #000 50%, transparent);
-		width: 65%;
-		padding-top: 3rem;
-		height: 29rem;
+		width: 80%;
+		padding-top: 2rem;
+		height: 30rem;
 		padding-left: 3rem;
 		/* margin-left: 20px; */
 		/* margin-right: 20px; */
@@ -97,7 +97,7 @@
 	}
 
 	&__btn {
-		text-transform: uppercase;
+		/* text-transform: uppercase;
 		font-weight: 500;
 		cursor: pointer;
 		background-color: transparent;
@@ -116,6 +116,9 @@
 
 		&:hover {
 			transform: scale(1.09);
+			background-color: transparent;
+			border: 0.5px solid $color-modal-grey-2;
+			color: red;
 		}
 
 		&--red {
@@ -128,13 +131,43 @@
 			padding-right: 1rem;
 			height: 1.4rem;
 			width: 1.4rem;
+		} */
+		background: transparent;
+		display: flex;
+		height: 44px;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: $white;
+		padding: 20px;
+		box-sizing: border-box;
+		border: 2px solid rgba($grey, 0.2);
+		border-radius: 44px;
+		font-size: 14px;
+		font-weight: 600;
+		transition: border 0.125s ease, background 0.125s ease;
+		margin-right: 20px;
+
+		&:hover {
+			border: 2px solid $grey;
+		}
+
+		&[data-primary="true"] {
+			border: 2px solid $red;
+
+			&:hover {
+				background: $red;
+			}
+		}
+		&--icon {
+			padding-right: 5px;
 		}
 	}
 }
 
 .show {
 	transition: 0.5s 0.3s ease-out;
-	top: 10%;
+	top: 14%;
 	left: 0;
 	visibility: visible;
 	opacity: 1;
@@ -142,4 +175,14 @@
 
 .hide {
 	visibility: hidden;
+}
+
+.button-wrapper {
+	display: flex;
+	width: 400px;
+	margin-top: 30px;
+
+	.Button:first-child {
+		margin-right: 10px;
+	}
 }
