@@ -1,9 +1,13 @@
 @import "./common/styles/functions";
 @import "./common/styles/variables";
 
-//@import "./common/styles/base";
+/* @import "./common/styles/base"; */
 
 @import "./component/UI/Footer/index.scss";
 @import "./component/UI/DisplayMovieRow/index.scss";
 @import "./component/UI/HomeHeader/index.scss";
 @import "./component/UI/Modal/index.scss";
+
+body {
+	margin: 0px;
+}
