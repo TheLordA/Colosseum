@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Lazy } from "swiper";
 import "swiper/components/scrollbar/scrollbar.scss";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 // install Swiper components
 SwiperCore.use([Navigation, Pagination, /*  Scrollbar, */ A11y, Lazy]);
 
@@ -26,7 +27,12 @@ const DisplayMovieRow = (props) => {
 
 	return (
 		<>
-			<h1 className="movieShowcase__heading">{props.title}</h1>
+			<div className="CategoryShowcase">
+				<h1 className="CategoryShowcase__title">{props.title}</h1>
+				<h5 className="CategoryShowcase__explore">Explore All</h5>
+				<ArrowForwardIosIcon className="CategoryShowcase__icon" />
+			</div>
+
 			<Swiper
 				className="movieShowcase__container"
 				navigation={true}
@@ -61,13 +67,7 @@ const DisplayMovieRow = (props) => {
 			>
 				{props.movies.map((movie, idx) => {
 					//console.log(movie);
-					let movieImageUrl = "https://image.tmdb.org/t/p/w500/" + movie.backdrop_path;
-					if (
-						props.url ===
-						`/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`
-					) {
-						movieImageUrl = "https://image.tmdb.org/t/p/original/" + movie.poster_path;
-					}
+					let movieImageUrl = "https://image.tmdb.org/t/p/w500/" + movie.poster_path;
 					if (movie.poster_path && movie.backdrop_path !== null) {
 						return (
 							<SwiperSlide
@@ -84,9 +84,9 @@ const DisplayMovieRow = (props) => {
 										src={movieImageUrl}
 										className="movieShowcase__container--movie-image"
 									/>
-									<h1 className="movieShowcase__container--movie-title">
+									{/* <h1 className="movieShowcase__container--movie-title">
 										{movie.title ? movie.title : movie.original_name}
-									</h1>
+									</h1> */}
 								</div>
 							</SwiperSlide>
 						);
