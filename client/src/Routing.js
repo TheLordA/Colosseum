@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+// Different States
 import MoviesState from "./contexts/movies/moviesState";
 
 import LandingScreen from "./pages/LandingScreen/LandingScreen";
