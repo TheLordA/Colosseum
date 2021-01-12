@@ -11,45 +11,6 @@ const MainContent = (props) => {
 	const { movies, getTrends } = useContext(moviesContext);
 	const [selectedMovie, setSelectedMovie] = useState({});
 
-	/* 
-	const [movieInfo, setMovieInfo] = useState([
-		{
-			title: "Netflix Originals",
-			url: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`,
-			movies: [],
-		},
-		{
-			title: "Trending Now",
-			url: `/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`,
-			movies: [],
-		},
-		{
-			title: "Top Rated",
-			url: `/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`,
-			movies: [],
-		},
-		{
-			title: "Action Movies",
-			url: `/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=28`,
-			movies: [],
-		},
-		{
-			title: "Comedy Movies",
-			url: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_genres=35`,
-			movies: [],
-		},
-		{
-			title: "Horror Movies",
-			url: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_genres=27`,
-			movies: [],
-		},
-		{
-			title: "Documentaries",
-			url: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_genres=99`,
-			movies: [],
-		},
-	]);
- */
 	const getMovie = () => {
 		// Movie Id for the Narcos series
 		const movieId = 63351;

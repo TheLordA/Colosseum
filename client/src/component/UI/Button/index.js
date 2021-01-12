@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Icon from "@material-ui/core/Icon";
 
 /**
