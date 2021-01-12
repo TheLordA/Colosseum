@@ -5,10 +5,9 @@ import "./index.css";
 export default function NotFound() {
 	return (
 		<>
-			<canvas id="canvas" hidden></canvas>
-			<div class="center">
-				<h1>404</h1>
-				<p>PAGE NOT FOUND.</p>
+			<div className="center">
+				<h1 className="err">404</h1>
+				<p className="notFound">PAGE NOT FOUND.</p>
 			</div>
 		</>
 	);
