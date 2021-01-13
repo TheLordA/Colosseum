@@ -26,17 +26,17 @@
 # Preview
 
 <p align="center">
-  <img src="img/image3.png"
-     alt="Colosseum logo by Anass FERRAK" >
+  <img src="img/image3.PNG"
+     alt="Colosseum Landing Page" >
 </p>
 
 <p align="center">
-  <img src="img/image1.png"
-     alt="Colosseum logo by Anass FERRAK" >
+  <img src="img/image1.PNG"
+     alt="Colosseum Home Page" >
 </p>
 <p align="center">
-  <img src="img/image2.png"
-     alt="Colosseum logo by Anass FERRAK" >
+  <img src="img/image2.PNG"
+     alt="Colosseum Movies slider" >
 </p>
 <p align="center">
   A GIF will be provided Soon
