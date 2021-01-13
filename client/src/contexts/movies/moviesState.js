@@ -29,6 +29,7 @@ const MoviesState = (props) => {
 
 	const [state, dispatch] = useReducer(MoviesReducer, initialState);
 
+	// get Trending Movies of the Week
 	const getTrends = async () => {
 		try {
 			let res = await axios.get(
@@ -42,12 +43,101 @@ const MoviesState = (props) => {
 		}
 	};
 
+	// get Top Rated Movies
+	const getTopRated = async () => {
+		try {
+			let res = await axios.get(
+				`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}`
+			);
+			let { data } = res;
+
+			dispatch({ type: FETCH_TOP_RATED, payload: data.results });
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	// get Action Movies
+	const getActionMovies = async () => {
+		try {
+			let res = await axios.get(
+				`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=28`
+			);
+			let { data } = res;
+
+			dispatch({ type: FETCH_ACTION_MOVIES, payload: data.results });
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	// get Comedy Movies
+	const getComedyMovies = async () => {
+		try {
+			let res = await axios.get(
+				`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=35`
+			);
+			let { data } = res;
+
+			dispatch({ type: FETCH_COMEDY_MOVIES, payload: data.results });
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	// get Horror Movies
+	const getHorrorMovies = async () => {
+		try {
+			let res = await axios.get(
+				`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=27`
+			);
+			let { data } = res;
+
+			dispatch({ type: FETCH_HORROR_MOVIES, payload: data.results });
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	// get Documentaries
+	const getDocumentaries = async () => {
+		try {
+			let res = await axios.get(
+				`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&with_genres=99`
+			);
+			let { data } = res;
+
+			dispatch({ type: FETCH_DOCUMENTARIES, payload: data.results });
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	// get Netflix Originals
+	const getNetflixOriginals = async () => {
+		try {
+			let res = await axios.get(
+				`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`
+			);
+			let { data } = res;
+
+			dispatch({ type: FETCH_NETFLIX_ORIGINALS, payload: data.results });
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
 	return (
 		<MoviesContext.Provider
 			value={{
 				movies: state,
-				dispatch,
 				getTrends,
+				getTopRated,
+				getActionMovies,
+				getComedyMovies,
+				getHorrorMovies,
+				getDocumentaries,
+				getNetflixOriginals,
 			}}
 		>
 			{props.children}
