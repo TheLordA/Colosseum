@@ -25,7 +25,22 @@
 
 # Preview
 
-Available Soon
+<p align="center">
+  <img src="img/image3.png"
+     alt="Colosseum logo by Anass FERRAK" >
+</p>
+
+<p align="center">
+  <img src="img/image1.png"
+     alt="Colosseum logo by Anass FERRAK" >
+</p>
+<p align="center">
+  <img src="img/image2.png"
+     alt="Colosseum logo by Anass FERRAK" >
+</p>
+<p align="center">
+  A GIF will be provided Soon
+</p>
 
 # Tech Stack
 
@@ -44,7 +59,38 @@ Available Soon
 
 # Usage
 
-Available Soon
+### Prerequisites:
+
+The project can be used along side with the server side or without it untill the next Readme update .
+
+-    Note: the authentification system isn't built yet, so the whole UI is reusable alone or with your BackEnd choice.
+
+-    Get a free API Key at [The Movie Database (TMDb)](www.themoviedb.org)
+
+### Installation:
+
+1. Clone the repo
+     ```sh
+     git clone https://github.com/TheLordA/Colosseum.git
+     ```
+2. Enter your API Key in `.env.example.js`
+     ```JS
+     REACT_APP_API_KEY="Your TMDB API KEY GOES HERE";
+     ```
+3. Rename the `.env.example.js` to `.env.js`.
+
+4. Install NPM packages
+     ```sh
+     cd client
+     npm install
+     ```
+5. Run the Client Side :
+     ```sh
+     cd client
+     npm start
+     ```
+
+-    The Server side Installation Will be Provided Soon
 
 # Features
 
