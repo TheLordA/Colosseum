@@ -11,12 +11,9 @@
     "react": "^16.14.0",
     "react-aux": "^1.1.0",
     "react-dom": "^16.14.0",
-    "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "react-transition-group": "^4.4.1",
-    "redux": "^4.0.5",
-    "redux-promise": "^0.6.0",
     "swiper": "^6.4.5",
     "webpack": "^4.44.2"
   },
