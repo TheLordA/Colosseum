@@ -11,7 +11,7 @@
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-	bottom: 95% !important;
+	bottom: 98% !important;
 	left: 43% !important;
 	width: 100% !important;
 }
@@ -143,19 +143,23 @@ div.swiper-button-next {
 .CategoryShowcase {
 	cursor: pointer;
 	display: flex;
+	width: fit-content;
+	height: fit-content;
 
 	&__title {
 		font-size: 25px;
 		margin-left: 2rem;
+		margin-bottom: 0px;
 		width: fit-content;
+		height: fit-content;
 	}
 	&__explore {
-		margin: 1.7rem 0.2rem 1.7rem 0.5rem;
+		margin: 1.7rem 0.2rem 0rem 0.5rem;
 		display: none;
 		transition: display 2s;
 	}
 	&__icon {
-		margin: 1.4rem 0.3rem;
+		margin: 1.4rem 0.3rem 0rem 0.3rem;
 	}
 	&:hover {
 		.CategoryShowcase__explore {
