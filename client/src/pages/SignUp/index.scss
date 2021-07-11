@@ -1,0 +1,75 @@
+.SignUp {
+	width: 100%;
+	height: 135vh;
+	img {
+		height: 65px;
+		width: 178px;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+}
+.SignUpCard {
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: calc(100% - 80px);
+	color: #fff;
+	padding: 40px 38px 40px;
+	form {
+		> * {
+			margin-top: 25px;
+		}
+		span {
+			color: red;
+			font-size: 13px;
+		}
+	}
+	button {
+		margin-top: 25px;
+	}
+	span {
+		margin-top: 25px;
+	}
+}
+.textField {
+	box-sizing: border-box;
+	border-radius: 2px;
+	width: 100%;
+	input {
+		color: white;
+	}
+}
+.HorizontalDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.spanLink {
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+@media (min-width: 600px) {
+	.SignUpCard {
+		width: 450px;
+		height: 640px;
+		padding: 40px 68px;
+		margin: auto auto;
+	}
+}
+@media (min-width: 1650px) {
+	.SignUpCard {
+		width: 550px;
+		height: 880px;
+		padding: 60px 68px 40px;
+		margin: auto;
+		form {
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+}

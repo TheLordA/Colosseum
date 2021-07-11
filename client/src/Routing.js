@@ -7,6 +7,7 @@ import LandingScreen from "./pages/LandingScreen/LandingScreen";
 import LoginScreen from "./pages/LogIn/index";
 import Home from "./pages/Home/index";
 import NotFound from "./pages/NotFound/index";
+import SignUp from "./pages/SignUp/index";
 
 const Routing = () => {
 	return (
@@ -16,6 +17,9 @@ const Routing = () => {
 			</Route>
 			<Route exact path="/login" component={LoginScreen}>
 				<LoginScreen />
+			</Route>
+			<Route exact path="/signup">
+				<SignUp />
 			</Route>
 			<Route exact path="/browse" component={Home}>
 				<MoviesState>
