@@ -8,6 +8,7 @@ import LoginScreen from "./pages/LogIn/index";
 import Home from "./pages/Home/index";
 import NotFound from "./pages/NotFound/index";
 import SignUp from "./pages/SignUp/index";
+import Profil from "./pages/ProfileScreen";
 
 const Routing = () => {
 	return (
@@ -20,6 +21,9 @@ const Routing = () => {
 			</Route>
 			<Route exact path="/signup">
 				<SignUp />
+			</Route>
+			<Route exact path="/profile">
+				<Profil />
 			</Route>
 			<Route exact path="/browse" component={Home}>
 				<MoviesState>
